@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans|Open+Sans:300,400|PT+Serif|Roboto+Slab|Rubik|Source+Sans+Pro');
+*{
+    transition: all ease .4s;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.inner{
+    position: relative;
+    top:-20px;
+    height: 100%;
+    width: 100%;
+}
+.menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 80px;
+    background: #CFA9A6;
+}
+.menu-itms{
+    position: absolute;
+    right: 280px;
+    top: 0;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+.menu-itm{
+    position: relative;
+    height: 80px;
+    width: 130px;
+    margin-left: 10px;
+    text-align: center;
+    line-height: 90px;
+    background: #CFA9A6;
+    font-family: 'Verdana', sans-serif;
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-size: .9em;
+    color:#fff;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.menu-itm:hover{
+    color: #63372C;
+}
+
+
+.info-itms{
+    position: absolute;
+    right: -20px;
+    top: 0px;
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+.info-itm{
+    position: relative;
+    height: 20px;
+    width: 80px;
+    margin-left: 10px;
+    text-align: center;
+    line-height: 90px;
+    background: #CFA9A6;
+    cursor: pointer;
+}
+
+.search{
+    position: relative;
+    right: 40px;
+    top: 30px;
+    height: 20px;
+    width: 100%;
+    display: flex;
+}
+
+.searchTerm {
+  width: 100%;
+  border: 3px solid #ADBCA5;
+  border-right: none;
+  padding: 5px;
+  height: 36px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9DBFAF;
+}
+
+.searchTerm:focus{
+  color: #00B4CC;
+}
+
+.searchButton {
+  width: 40px;
+  height: 36px;
+  border: 1px solid #ADBCA5;
+  background: #ADBCA5;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+
+.icon{
+    position: relative;
+    left:-10px;
+    height: 30px;
+}
+
+
+.logo{
+    position: relative;
+    height: 70px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.logo-i{
+    filter: invert(100%);
+    height: 70px;
+    margin-top: 65px;
+    margin-left: 10px;
+}
+.main{
+    background: url('css/homepic1.jpeg') fixed center center;
+    background: #eee;
+    background-repeat: repeat;
+}
+.header{
+    width: 100;
+    height: 800px;
+    background: url(homepic.jpg) fixed center center;
+    background-size: 2000px;
+    background-position-y: -220px;
+}
+.heading{
+    position: absolute;
+    top: 298px;
+    left: 50vw;
+    transform: translate(-50%,-50%);
+    font-family: 'Verdana';
+    font-size: 3.3em;
+    width: 600px;
+    color: #000;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.heading h2{
+    font-size: 1em;
+    color: #000;
+    top:200px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.heading h3{
+    font-size: 0.5em;
+    color: #000;
+    top:200px;
+    width:400px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+/*low opacity bg */
+
+#rectangle{
+    width:400px;
+    height:722px;
+    background:white;
+    opacity: 60%;
+    top: -218px;
+    left:-600px;
+    position:absolute;
+}
+
+/* different buttons*/
+.button{
+    position: absolute;
+    left:-550px;
+    top:200px;
+    height: 83px;
+    width: 295px;
+    background: #ADBCA5;
+    letter-spacing: 1px;
+    font-weight: 300;
+    font-size: .4em;
+    color: #fff;
+    border-radius: 8px;
+    border: 3px solid #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-align: center;
+}
+
+.button1{
+    position: absolute;
+    left:-550px;
+    top:340px;
+    height: 83px;
+    width: 295px;
+    background: #fff;
+    letter-spacing: 1px;
+    font-weight: 300;
+    font-size: .4em;
+    color: #ADBCA5;
+    border-radius: 8px;
+    border: 3px solid #ADBCA5;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-align: center;
+}
+
+
+.body-text{
+    position: relative;
+    font-size: 1.3em;
+    color: #666;
+    letter-spacing: .5px;
+}
+
+
+
+
+/* These are my old code from another project, do not need them rn*/
+.grid{
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    padding: 1.5em;
+    font-size: 1.6em;
+    font-family: 'PT Serif';
+    color: #fff;
+    background-size: cover;
+    letter-spacing: 1px;
+}
+
+
+.arrow{
+    cursor: pointer;
+}
+.arrow:hover{
+    padding-right: 5px;
+}
+.footer{
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 1px;
+    font-weight: 300;
+    font-size: 1em;
+    position: relative;
+    background: #000;
+    color: #fff;
+    padding: 1em;
+}
+@media (max-width: 500px)
+{
+    .menu-itms{
+        display: none;
+    }
+    .heading{
+        width: 400px;
+    }
+    .header{
+        background-position-y: 140px;
+    }
+}

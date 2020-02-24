@@ -5,3 +5,28 @@ class Question {
     this.answer = answer;
 }
 }
+
+var questions = [
+new Question("Hyper Text Markup Language Stand For?", ["JavaScript", "XHTML","CSS", "HTML"], "HTML"),
+new Question("Which language is used for styling web pages?", ["HTML", "JQuery", "CSS", "XML"], "CSS"),
+new Question("What has not been covered in PUI lab?", ["HTML", "CSS","Javascript", "Java"], "Java"),
+];
+
+new Question("Hyper Text Markup Language Stand For?", ["JavaScript", "XHTML","CSS", "HTML"], "HTML")
+
+class Quiz {
+		constructor(questions) {
+			this.score = 0;
+	this.questions = questions;
+			this.questionIndex = 0;
+}	
+
+	
+	getQuestion() {
+
+		return this.questions[this.questionIndex];
+	
+}
+
+}
+
