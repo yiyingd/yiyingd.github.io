@@ -144,9 +144,9 @@ a{
     background-position-y: -220px;
 }
 .heading{
-    position: absolute;
+    position: relative;
     top: 298px;
-    left: 50vw;
+    left: 1000px;
     transform: translate(-50%,-50%);
     font-family: 'Verdana';
     font-size: 3.3em;

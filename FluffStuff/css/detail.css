@@ -172,7 +172,7 @@ a{
 .detail_container{
   font-family: 'Verdana';
   height:1400px;
-  width:1600px;
+  width:1200px;
   float: left;
   padding-left: 30px;
   padding-top: 50px;
@@ -182,12 +182,8 @@ a{
 
 }
 
-.main_picture{
-  padding-left: 50px;
-}
 
 .info{
-  padding-top: -30px;
   padding-left: 50px;
 }
 
@@ -231,10 +227,7 @@ a{
 }
 
 /*the stars */
-.rating {
-  margin-left: -50px;
 
-}
 
 
 
@@ -242,7 +235,7 @@ a{
   background-color: lightgrey;
   border: none;
   color: black;
-  padding: 12px 32px;
+  padding: 6px 16px;
   text-align: center;
   font-size: 16px;
   margin: 4px 2px;
@@ -261,9 +254,10 @@ a{
 
 .add {
   background-color: #ADBCA5;
+  width: 160px;
   border: none;
   color: white;
-  padding: 12px 32px;
+  padding: 6px 16px;
   text-align: center;
   font-size: 16px;
   margin: 4px 2px;

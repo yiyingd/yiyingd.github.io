@@ -226,8 +226,8 @@ a{
 /*white bg */
 .product_container{
   font-family: 'Verdana';
-  height:1000px;
-  width:1200px;
+  height:1200px;
+  width:1000px;
   float: left;
   padding-left: 30px;
   padding-top: 50px;
@@ -269,10 +269,14 @@ a{
 .card:hover {
   opacity: 0.7;
 }
+.circles{
+  margin-left: 200px;
+  margin-top: -42px;
+}
+
 
 .dot {
-  margin-left: 250px;
-  margin-top: -100px;
+  margin-left: 10px;
   margin-bottom: 30px;
   height: 25px;
   width: 25px;
@@ -281,6 +285,16 @@ a{
   display: inline-block;
 }
 
+
+#c1{
+  background-color: #D7CDC9;
+}
+
+
+
+#c2{
+  background-color: #D19E8B;
+}
 
 
 
