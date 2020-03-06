@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans|Open+Sans:300,400|PT+Serif|Roboto+Slab|Rubik|Source+Sans+Pro');
 *{
     transition: all ease .4s;
     box-sizing: border-box;
@@ -182,111 +181,72 @@ a{
 
 }
 
-
-.info{
-  padding-left: 50px;
-}
-
-.info h1{
+.detail_container h2{
     font-family: 'Verdana';
-    font-size: 2.2em;
+    font-size:2.5em;
     color: black;
-    font-weight: 200;
+    font-weight: 40;
     letter-spacing: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #A9BDA3;
 
 }
 
-.info h3{
-    font-family: 'Verdana';
-    font-size: 1.2em;
-    color: black;
-    font-weight: 50;
-    letter-spacing: 1px;
-
+.card{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
-.info h4{
-    font-family: 'Verdana';
-    font-size: 1.2em;
-    color: black;
-    font-weight: 50;
-    letter-spacing: 1px;
-    border-bottom-style: dashed;
-    border-bottom-color: black;
-
-}
-.other h4{
-    font-family: 'Verdana';
-    font-size: 1.2em;
-    color: black;
-    font-weight: 50;
-    letter-spacing: 1px;
-    border-bottom-style: dashed;
-    border-bottom-color: black;
-
+.card h4{
+  margin-left: 20px;
+  font-family: 'Verdana';
+  fot-size:1.5em;
 }
 
-/*the stars */
-
-
-
-
-.button{
-  background-color: lightgrey;
-  border: none;
-  color: black;
-  padding: 6px 16px;
-  text-align: center;
-  font-size: 16px;
-  margin: 4px 2px;
-  margin-left: -14px;
-  border-radius: 10px;
-  opacity: 0.6;
-  transition: 0.3s;
-  display: inline-block;
-  text-decoration: none;
-  cursor: pointer;
+.card h5{
+  margin-left: 20px;
+  font-family: 'Verdana';
+  color:gray;
+  font-size:1.0em;
 }
 
-#Twin_clicked{
-  background-color: #ADBCA5;
-  border: none;
-  color: black;
-  padding: 6px 16px;
-  text-align: center;
-  font-size: 16px;
-  margin: 4px 2px;
-  margin-left: -14px;
-  border-radius: 10px;
-  opacity: 0.6;
-  transition: 0.3s;
-  display: inline-block;
-  text-decoration: none;
-  cursor: pointer;
+.product-line-price{
+  font-family: 'Verdana';
+  font-size:1.2em;
+  margin-right: 10px;
 }
 
-#Twin{
-  background-color: lightgrey;
-  border: none;
-  color: black;
-  padding: 6px 16px;
-  text-align: center;
-  font-size: 16px;
-  margin: 4px 2px;
-  margin-left: -14px;
-  border-radius: 10px;
-  opacity: 0.6;
-  transition: 0.3s;
-  display: inline-block;
-  text-decoration: none;
-  cursor: pointer;
+.option{
+  text-align:right;
 }
 
+.option p{
+  text-decoration-line: underline;
+  color:gray;
+}
 
-/* Hover feedback!*/
-.button:hover {opacity: 1}
+.bottom_option{
+  text-align: right;
+}
 
-.add {
+.card img{
+  height:150px;
+}
+
+.summary{
+  margin-top: 100px;
+  text-align: right;
+  padding-top: 10px;
+  border-top-style: solid;
+  border-top-color: #A9BDA3;
+}
+
+.summary p{
+  padding-top: 20px;
+}
+
+.checkout {
   background-color: #ADBCA5;
   width: 160px;
   border: none;
@@ -304,9 +264,11 @@ a{
   cursor: pointer;
 }
 
-.add:hover {opacity: 1}
+.checkout:hover {opacity: 1}
 
-.other{
-  margin-top: 100px;
-}
+
+.product-quantity input{
+      width: 60px;
+  }
+
 

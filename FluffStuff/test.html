@@ -1,118 +1,140 @@
-<meta charset="utf-8" />
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Big Skinny</title>
+    <title>Detail</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="css/index.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="css/product.css" />
-    <script src="scripts/index.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/cart.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type='text/javascript' src="scripts/cart.js"></script>
 
     <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="https://wchat.freshchat.com/js/widget.js"></script>
 
+</head>
 
-
-
-
-
-<main class="main-content">
-  <section class="slideshow">
-    <div class="slideshow-inner">
-      <div class="slides">
-        <div class="slide is-active ">
-          <div class="slide-content">
-            <div class="caption">
-              <div class="title">Slide title 1</div>
-              <div class="text">
-                <p>Slide description 1</p>
-              </div> 
-              <a href="#" class="btn">
-                <span class="btn-inner">Learn More</span>
-              </a>
-            </div>
-          </div>
-          <div class="image-container"> 
-            <img src="https://www.alixbdanthenay.fr/wp-content/uploads/2015/07/Indispensable-1.jpg" alt="" class="image" />
-          </div>
-        </div>
-        <div class="slide">
-          <div class="slide-content">
-            <div class="caption">
-              <div class="title">Slide title 2</div>
-              <div class="text">
-                <p>Slide description 2</p>
-              </div> 
-              <a href="#" class="btn">
-                <span class="btn-inner">Learn More</span>
-              </a>
-            </div>
-          </div>
-          <div class="image-container">
-            <img src="https://www.alixbdanthenay.fr/wp-content/uploads/2015/07/Indispensable-4-1.jpg" alt="" class="image" />
-          </div>
-        </div>
-        <div class="slide">
-          <div class="slide-content">
-            <div class="caption">
-              <div class="title">Slide title 3</div>
-              <div class="text">
-                <p>Slide description 3</p>
-              </div> 
-              <a href="#" class="btn">
-                <span class="btn-inner">Learn More</span>
-              </a>
-            </div>
-          </div>
-          <div class="image-container">
-            <img src="https://www.alixbdanthenay.fr/wp-content/uploads/2016/11/11.jpg" alt="" class="image" />
-          </div>
-        </div>
-        <div class="slide">
-          <div class="slide-content">
-            <div class="caption">
-              <div class="title">Slide title 4</div>
-              <div class="text">
-                <p>Slide description 4</p>
-              </div> 
-              <a href="#" class="btn">
-                <span class="btn-inner">Learn More</span>
-              </a>
-            </div>
-          </div>
-          <div class="image-container"> 
-            <img src="https://www.alixbdanthenay.fr/wp-content/uploads/2016/11/20mars17-sans-typo.jpg" alt="" class="image" />
-          </div>
-        </div>
+<body>
+<!-- Start of Nav bar -->
+<div class = "row">
+  <div class="menu">
+    <div class="inner">
+      <p><a href="index.html"><img src="css/pillow_icon.png" class="logo" alt=""/ align="middle"></a></p>
+      <div class="menu-itms">
+        <div class="menu-itm">Home</div>
+        <div class="menu-itm">New</div>
+        <div class="menu-itm">Category</div>
+        <div class="menu-itm">Sale</div>
       </div>
-      <div class="pagination">
-        <div class="item is-active"> 
-          <span class="icon">1</span>
-        </div>
-        <div class="item">
-          <span class="icon">2</span>
-        </div>
-        <div class="item">
-          <span class="icon">3</span>
-        </div>
-        <div class="item">
-          <span class="icon">4</span>
-        </div>
+
+      <div class="info-itms">
+
+       <div class="wrap">
+         <div class="search"> <!-- Creted a smart search bar -->
+            <input type="text" class="searchTerm" placeholder="Looking for sth cozy">
+            <button type="submit" class="searchButton">
+              <i class="fa fa-search"></i>
+           </button>
+         </div>
       </div>
-      <div class="arrows">
-        <div class="arrow prev">
-          <span class="svg svg-arrow-left">
-            <svg version="1.1" id="svg4-Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14px" height="26px" viewBox="0 0 14 26" enable-background="new 0 0 14 26" xml:space="preserve"> <path d="M13,26c-0.256,0-0.512-0.098-0.707-0.293l-12-12c-0.391-0.391-0.391-1.023,0-1.414l12-12c0.391-0.391,1.023-0.391,1.414,0s0.391,1.023,0,1.414L2.414,13l11.293,11.293c0.391,0.391,0.391,1.023,0,1.414C13.512,25.902,13.256,26,13,26z"/> </svg>
-            <span class="alt sr-only"></span>
-          </span>
-        </div>
-        <div class="arrow next">
-          <span class="svg svg-arrow-right">
-            <svg version="1.1" id="svg5-Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14px" height="26px" viewBox="0 0 14 26" enable-background="new 0 0 14 26" xml:space="preserve"> <path d="M1,0c0.256,0,0.512,0.098,0.707,0.293l12,12c0.391,0.391,0.391,1.023,0,1.414l-12,12c-0.391,0.391-1.023,0.391-1.414,0s-0.391-1.023,0-1.414L11.586,13L0.293,1.707c-0.391-0.391-0.391-1.023,0-1.414C0.488,0.098,0.744,0,1,0z"/> </svg>
-            <span class="alt sr-only"></span>
-          </span>
-        </div>
+
+        <div class="info-itm"><img src="css/user_icon.png" class="icon" alt=""/ align="middle"></div>
+        <div class="info-itm"><img src="css/cart_icon.png" class="icon" alt=""/ align="middle"></div>
       </div>
-    </div> 
-  </section>
-</main>
+    </div>
+  </div>
+</div>
+
+<!-- End of Nav bar -->
+
+<div class = "maincontent" >
+    <h1>Shopping Cart</h1>
+
+<div class="shopping-cart">
+
+  <div class="column-labels">
+    <label class="product-image">Image</label>
+    <label class="product-details">Product</label>
+    <label class="product-price">Price</label>
+    <label class="product-quantity">Quantity</label>
+    <label class="product-removal">Remove</label>
+    <label class="product-line-price">Total</label>
+  </div>
+
+  <div class="product">
+    <div class="product-image">
+      <img src="https://s.cdpn.io/3/dingo-dog-bones.jpg">
+    </div>
+    <div class="product-details">
+      <div class="product-title">Dingo Dog Bones</div>
+      <p class="product-description">The best dog bones of all time. Holy crap. Your dog will be begging for these things! I got curious once and ate one myself. I'm a fan.</p>
+    </div>
+    <div class="product-price">12.99</div>
+    <div class="product-quantity">
+      <input type="number" value="2" min="1">
+    </div>
+    <div class="product-removal">
+      <button class="remove-product">
+        Remove
+      </button>
+    </div>
+    <div class="product-line-price">25.98</div>
+  </div>
+
+  <div class="product">
+    <div class="product-image">
+      <img src="https://s.cdpn.io/3/large-NutroNaturalChoiceAdultLambMealandRiceDryDogFood.png">
+    </div>
+    <div class="product-details">
+      <div class="product-title">Nutro™ Adult Lamb and Rice Dog Food</div>
+      <p class="product-description">Who doesn't like lamb and rice? We've all hit the halal cart at 3am while quasi-blackout after a night of binge drinking in Manhattan. Now it's your dog's turn!</p>
+    </div>
+    <div class="product-price">45.99</div>
+    <div class="product-quantity">
+      <input type="number" value="1" min="1">
+    </div>
+    <div class="product-removal">
+      <button class="remove-product">
+        Remove
+      </button>
+    </div>
+    <div class="product-line-price">45.99</div>
+  </div>
+
+  <div class="totals">
+    <div class="totals-item">
+      <label>Subtotal</label>
+      <div class="totals-value" id="cart-subtotal">71.97</div>
+    </div>
+    <div class="totals-item">
+      <label>Tax (5%)</label>
+      <div class="totals-value" id="cart-tax">3.60</div>
+    </div>
+    <div class="totals-item">
+      <label>Shipping</label>
+      <div class="totals-value" id="cart-shipping">15.00</div>
+    </div>
+    <div class="totals-item totals-item-total">
+      <label>Grand Total</label>
+      <div class="totals-value" id="cart-total">90.57</div>
+    </div>
+  </div>
+      
+      <button class="checkout">Checkout</button>
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+</body>
+
+
+</html>
