@@ -84,6 +84,7 @@ a{
 
 
 .info-itms{
+    margin-right:40px; 
     position: absolute;
     right: -20px;
     top: 0px;
@@ -231,7 +232,7 @@ a{
 
 
 
-.button{
+.size{
   background-color: lightgrey;
   border: none;
   color: black;
@@ -246,6 +247,10 @@ a{
   display: inline-block;
   text-decoration: none;
   cursor: pointer;
+}
+
+.selectedSize {
+  background-color: #ADBCA5;
 }
 
 #Twin_clicked{
@@ -308,5 +313,39 @@ a{
 
 .other{
   margin-top: 100px;
+}
+
+.colorOptions{
+  margin-left: -30px;
+  margin-top: -42px;
+}
+
+
+.color {
+  margin-left: 30px;
+  height: 25px;
+  width: 25px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+
+#gray{
+  background-color: #D7CDC9;
+}
+
+
+
+#orange{
+  background-color: #D19E8B;
+}
+
+#counter{
+  margin-top: 38px;
+}
+
+.selectedColor {
+  border: 3px solid #ADBCA5;
 }
 
