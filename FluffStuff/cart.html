@@ -15,7 +15,7 @@
 <body>
 <!-- Start of Nav bar -->
 <div class = "row">
-  <div class="menu">
+  <div class="menu"> <!-- nav bar -->
     <div class="inner">
       <p><a href="index.html"><img src="css/pillow_icon.png" class="logo" alt=""/ align="middle"></a></p>
       <div class="menu-itms">
@@ -28,7 +28,7 @@
       <div class="info-itms">
 
        <div class="wrap">
-         <div class="search"> <!-- Creted a smart search bar -->
+         <div class="search">
             <input type="text" class="searchTerm" placeholder="Looking for sth cozy">
             <button type="submit" class="searchButton">
               <i class="fa fa-search"></i>
@@ -36,8 +36,9 @@
          </div>
       </div>
 
-        <div class="info-itm"><img src="css/user_icon.png" class="icon" alt=""/ align="middle"></div>
-        <div class="info-itm"><img src="css/cart_icon.png" class="icon" alt=""/ align="middle"></div>
+        <div class="info-itm"><img src="css/user_icon.png" class="icon" alt=""/ align="middle">
+        <a href="cart.html"><img class = "icon" src="css/cart_icon.png"></a></div>
+        <div id="counter" href="cart.html">0</div>
       </div>
     </div>
   </div>
@@ -62,96 +63,12 @@
                     </div>
                 </div>
 
-<!-- Start of a single item card -->   
-                <div class="card">
-                    <div class = "row">
-                        <div class = "col-2">                            
-                            <div class = "picture"> <!-- jump to another page -->
-                                <a href = "detail.html"><img src="css/product1.png" alt="Georgina Stems Duvet Set"></a>
-                            </div>
-                        </div>
-
-                        <div class = "col-7">
-                            <h4>Georgina Stems Duvet Set</h4>
-                            <h5>Size: Twin XL</h5>
-                            <h5>Color: White</h5>
-                        </div>
-
-                        <div class = "col-3">
-                            <div class = "option">
-                                <div class = "row">
-                                    <span>
-                                        <div id = "edit"><p>Edit</p></div>
-                                        <div id = "remove"><p>Remove</p></div>
-                                    </span>
-                                </div>
-                            </div>
-                            <br>
-                            <div class = "bottom_option">
-                                <span class = "price"> $39.99</span>
-                                <select id="year">
-                                    <option value="hide">-- 1 --</option>
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    <option value="5">5</option>
-                                    <option value="6">6</option>
-                                </select>
-                            </div>
-
-                           
-                        </div>
-
-                    </div> 
-                </div>
-
-<!-- End of a single item card -->   
+<!-- Start of a single item card -->     
 
 
 <!-- Start of a single item card -->   
-                <div class="card">
-                    <div class = "row">
-                        <div class = "col-2">                            
-                            <div class = "picture"> <!-- jump to another page -->
-                                <a href = "detail.html"><img src="css/product1.png" alt="Georgina Stems Duvet Set"></a>
-                            </div>
-                        </div>
-
-                        <div class = "col-7">
-                            <h4>Georgina Stems Duvet Set</h4>
-                            <h5>Size: Twin XL</h5>
-                            <h5>Color: White</h5>
-                        </div>
-
-                        <div class = "col-3">
-                            <div class = "option">
-                                <div class = "row">
-                                    <span>
-                                        <div id = "edit"><p>Edit</p></div>
-                                        <div id = "remove"><p>Remove</p></div>
-                                    </span>
-                                </div>
-                            </div>
-                            <br>
-                            <div class = "bottom_option">
-                                <span class = "price"> $39.99</span>
-                                <select id="year">
-                                    <option value="hide">-- 1 --</option>
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    <option value="5">5</option>
-                                    <option value="6">6</option>
-                                </select>
-                            </div>
-
-                           
-                        </div>
-
-                    </div> 
-                </div>
+    <div class= "columnCart" id="cardContainer"></div>
+                
 
 <!-- End of a single item card -->   
             <div class = "row">

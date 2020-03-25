@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans|Open+Sans:300,400|PT+Serif|Roboto+Slab|Rubik|Source+Sans+Pro');
 *{
     transition: all ease .4s;
     box-sizing: border-box;
@@ -83,6 +84,7 @@ a{
 
 
 .info-itms{
+    margin-right:40px; 
     position: absolute;
     right: -20px;
     top: 0px;
@@ -166,6 +168,20 @@ a{
     background: #EEE2DF;
 }
 
+/* background white*/
+
+.detail_container{
+  font-family: 'Verdana';
+  height:1400px;
+  width:1200px;
+  float: left;
+  padding-left: 30px;
+  padding-top: 50px;
+  padding-right: 30px;
+  background:#fff;
+  border-radius: 15px;
+
+}
 /* background white*/
 
 .detail_container{

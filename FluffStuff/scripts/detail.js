@@ -1,17 +1,5 @@
 var color = "";
 var size = "";
-var userItems = JSON.parse(localStorage.getItem("userItems"));
-var idCounter = JSON.parse(localStorage.getItem("idCounter"));
-localStorage.clear()
-console.log(userItems);
-document.getElementById("counter").innerHTML = Object.keys(userItems).length;
-if (userItems == undefined) {
-	localStorage.setItem("userItems", "{}")
-	userItems = {}}
-if (idCounter == undefined) {
-	localStorage.setItem("idCounter", 0)
-	idCounter = 0}
-
 function color_select1() {
 	if (color == "gray") {
 		document.getElementById(color).classList.remove("selectedColor");
@@ -77,7 +65,26 @@ function size_selector2() {
 	}
 }
 
-function addtoCart() {
+localStorage.clear()
+
+var userItems = JSON.parse(localStorage.getItem("userItems"));
+var idCounter = JSON.parse(localStorage.getItem("idCounter"));
+
+if (userItems == undefined) {
+	localStorage.setItem("userItems", "{}")
+	userItems = {}
+}
+
+if (idCounter == undefined) {
+	localStorage.setItem("idCounter", 0)
+	idCounter = 0
+}
+console.log(userItems)
+document.getElementById("counter").innerHTML = Object.keys(userItems).length;
+
+// 
+
+function addCart() {
 	userItems[idCounter] = {color: color,size: size, 
 		qty: document.getElementById("quantInput").value};
 	idCounter++;
