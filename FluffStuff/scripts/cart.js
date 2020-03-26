@@ -1,5 +1,6 @@
+
 var cartItems = JSON.parse(localStorage.getItem("userItems"))
-document.getElementById("counter").innerHTML = Object.keys(userItems).length;
+document.getElementById("counter").innerHTML = cartItems.length;
 
 if (cartItems==undefined) {
 	localStorage.setItem("cartItems", "{}")
@@ -14,8 +15,8 @@ var finalTotal = 0
 for (var key in cartItems) {
 	item = cartItems[key]
 
-	totalPrice += item.qty*39.99
-	totalTax += 0.07*item.qty*39.99
+	totalPrice += item.qty*19.99
+	totalTax += 0.07*item.qty*19.99
 
 	// var container = document.getElementById("cardContainer")
 	document.getElementById("cardContainer").innerHTML += `<div class="card">
@@ -28,8 +29,8 @@ for (var key in cartItems) {
 
                         <div class = "col-7">
                             <h4>Georgina Stems Duvet Set</h4>
-                            <h5>Size: Twin XL</h5>
-                            <h5>Color: White</h5>
+                            <h5>Size: ${item.size}</h5>
+                            <h5>Color: ${item.color}</h5>
                         </div>
 
                         <div class = "col-3">
@@ -44,15 +45,7 @@ for (var key in cartItems) {
                             <br>
                             <div class = "bottom_option">
                                 <span class = "price"> $39.99</span>
-                                <select id="year">
-                                    <option value="hide">-- 1 --</option>
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    <option value="5">5</option>
-                                    <option value="6">6</option>
-                                </select>
+                                <h5>Color: ${item.qty}</h5>
                             </div>
 
                            
@@ -60,6 +53,8 @@ for (var key in cartItems) {
 
                     </div> 
                 </div>`
+		
+	
 }
 
 finalTotal = totalPrice + totalTax +2.99

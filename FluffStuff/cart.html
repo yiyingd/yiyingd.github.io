@@ -8,14 +8,13 @@
     <link rel="stylesheet" type="text/css" media="screen" href="css/cart.css" />
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script type='text/javascript' src="scripts/cart.js"></script>
 
 </head>
 
 <body>
 <!-- Start of Nav bar -->
 <div class = "row">
-  <div class="menu"> <!-- nav bar -->
+  <div class="menu">
     <div class="inner">
       <p><a href="index.html"><img src="css/pillow_icon.png" class="logo" alt=""/ align="middle"></a></p>
       <div class="menu-itms">
@@ -28,7 +27,7 @@
       <div class="info-itms">
 
        <div class="wrap">
-         <div class="search">
+         <div class="search"> <!-- Creted a smart search bar -->
             <input type="text" class="searchTerm" placeholder="Looking for sth cozy">
             <button type="submit" class="searchButton">
               <i class="fa fa-search"></i>
@@ -36,9 +35,10 @@
          </div>
       </div>
 
-        <div class="info-itm"><img src="css/user_icon.png" class="icon" alt=""/ align="middle">
-        <a href="cart.html"><img class = "icon" src="css/cart_icon.png"></a></div>
+        <div class="info-itm"><img src="css/user_icon.png" class="icon" alt=""/ align="middle"></div>
+        <div class="info-itm"><img src="css/cart_icon.png" class="icon" alt=""/ align="middle"></div>
         <div id="counter" href="cart.html">0</div>
+
       </div>
     </div>
   </div>
@@ -63,20 +63,21 @@
                     </div>
                 </div>
 
-<!-- Start of a single item card -->     
+
+            <div class= "columnCart" id="cardContainer"></div>
 
 
-<!-- Start of a single item card -->   
-    <div class= "columnCart" id="cardContainer"></div>
-                
 
-<!-- End of a single item card -->   
+
+
+
+
             <div class = "row">
                 <div class = "col-8"></div>
                 <div class = "col-4">
                     <div class = "summary">
                         <div id  = "tax"><p>Tax:       $11.76</p></div>
-                        <div id  = "total"><p>Tax:       $129.43</p></div>
+                        <h3 id="total">$23.85</h3>
                         <button class="checkout">Checkout</button>
                     </div>
                 </div>
@@ -100,5 +101,6 @@
 
 </body>
 
+<script type='text/javascript' src="scripts/cart.js"></script>
 
 </html>
