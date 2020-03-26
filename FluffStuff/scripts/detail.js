@@ -1,5 +1,20 @@
 var color = "";
 var size = "";
+var itemSelect = JSON.parse(localStorage.getItem("itemSelect"));
+var num = JSON.parse(localStorage.getItem("num"));
+
+if (itemSelect == undefined) {
+	localStorage.setItem("itemSelect", "{}")
+	itemSelect = {}}
+if (num == undefined) {
+	localStorage.setItem("num", 0)
+	num = 0}
+
+
+console.log(itemSelect)
+
+
+document.getElementById("counter").innerHTML = Object.keys(itemSelect).length;
 function color_select1() {
 	if (color == "gray") {
 		document.getElementById(color).classList.remove("selectedColor");
@@ -32,14 +47,11 @@ function color_select2() {
 }
 
 function size_selector1() {
-	// If the size is already tiny, clicking it again will remove the border 
 	if (size == "Twin") {
 		document.getElementById(size).classList.remove("selectedSize");
 		size = ""
-		// Adding text to the HTML page that indicates the size selected
 		document.getElementById("selecSizeTxt").innerHTML = `Size:`;
 	} else {
-		// if selected is any other size, remove the background color and add it to the size that is clicked on
 		if (size != "") {
 			document.getElementById(size).classList.remove("selectedSize");
 		}
@@ -49,7 +61,7 @@ function size_selector1() {
 	}
 }
 
-// Same process for these size selectors, one for each size option
+// repeat for another option
 function size_selector2() {
 	if (size == "Queen") {
 		document.getElementById(size).classList.remove("selectedSize");
@@ -67,31 +79,14 @@ function size_selector2() {
 
 localStorage.clear()
 
-var userItems = JSON.parse(localStorage.getItem("userItems"));
-var idCounter = JSON.parse(localStorage.getItem("idCounter"));
-
-if (userItems == undefined) {
-	localStorage.setItem("userItems", "{}")
-	userItems = {}
-}
-
-if (idCounter == undefined) {
-	localStorage.setItem("idCounter", 0)
-	idCounter = 0
-}
-console.log(userItems)
-document.getElementById("counter").innerHTML = Object.keys(userItems).length;
-
-// 
-
 function addCart() {
-	userItems[idCounter] = {color: color,size: size, 
+	itemSelect[num] = {color: color,size: size, 
 		qty: document.getElementById("quantInput").value};
-	idCounter++;
-	localStorage.removeItem("idCounter");
-	localStorage.setItem("idCounter", idCounter);
-	localStorage.removeItem("userItems");
-	localStorage.setItem("userItems",JSON.stringify(userItems));
-	document.getElementById("counter").innerHTML = Object.keys(userItems).length;
-	console.log(userItems);
+	num++;
+	localStorage.removeItem("num");
+	localStorage.setItem("num", num);
+	localStorage.removeItem("itemSelect");
+	localStorage.setItem("itemSelect",JSON.stringify(itemSelect));
+	document.getElementById("counter").innerHTML = Object.keys(itemSelect).length;
+	console.log(itemSelect);
 }

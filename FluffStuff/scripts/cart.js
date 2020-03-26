@@ -1,23 +1,22 @@
+var priceSum = 0
+var taxSum = 0
+var finalTotal = 0
+var itemsCart = JSON.parse(localStorage.getItem("itemSelect"))
 
-var cartItems = JSON.parse(localStorage.getItem("userItems"))
-if (cartItems==undefined) {
-	localStorage.setItem("cartItems", "{}")
-	cartItems = {}
+
+if (itemsCart==undefined) {
+	localStorage.setItem("itemsCart", "{}")
+	itemsCart = {}
 }
 
-var totalPrice = 0
-var totalTax = 0
-var finalTotal = 0
-
-for (var key in cartItems) {
-	item = cartItems[key]
-
-	totalPrice += item.qty*19.99
-	totalTax += 0.07*item.qty*19.99
-
-	// var container = document.getElementById("cardContainer")
-	document.getElementById("cardContainer").innerHTML += `<div class="card">
-                    <div class = "row">
+for (var key in itemsCart) {
+	item = itemsCart[key]
+	priceSum += item.qty*39.99
+	taxSum += 0.07*item.qty*39.99
+	//error with delete function...trying to fix it next time
+	document.getElementById("cardContainer").innerHTML += `
+					<div class="card">
+                    	<div class = "row">
                         <div class = "col-2">                            
                             <div class = "picture"> <!-- jump to another page -->
                                 <a href = "detail.html"><img src="css/product1.png" alt="Georgina Stems Duvet Set"></a>
@@ -35,7 +34,7 @@ for (var key in cartItems) {
                                 <div class = "row">
                                     <span>
                                         <div id = "edit"><p>Edit</p></div>
-                                        <div id = "remove"><p>Remove</p></div>
+                                        <div onclick="removeItem(this.id)" id = "remove"><p>Remove</p></div>
                                     </span>
                                 </div>
                             </div>
@@ -54,30 +53,26 @@ for (var key in cartItems) {
 	
 }
 
-finalTotal = totalPrice + totalTax +2.99
-document.getElementById("itemPrice").innerHTML = '$'+ totalPrice.toFixed(2).toString()
-document.getElementById("itemTax").innerHTML = '$'+ totalTax.toFixed(2).toString()
+finalTotal = priceSum + taxSum +2.99
+document.getElementById("itemPrice").innerHTML = '$'+ priceSum.toFixed(2).toString()
+document.getElementById("itemTax").innerHTML = '$'+ taxSum.toFixed(2).toString()
 document.getElementById("total").innerHTML = '$'+ finalTotal.toFixed(2).toString()
 
 
-// Removing items from cart
 
 function removeItem (id) {
-	toRemove = document.getElementById(id).parentNode
+	toRemove = document.getElementById(id).parentNode.parentNode
 	toRemove.parentNode.removeChild(toRemove)
+	deleteID = id.split("exitButton")[1]
+	item = itemsCart[deleteID]
 
-	idNum = id.split("exitButton")[1]
-	item = cartItems[idNum]
-
-	totalPrice -= item.qty*19.99
-	totalTax -= 0.07*item.qty*19.99
-	finalTotal = totalPrice + totalTax +2.99
-
-	document.getElementById("itemPrice").innerHTML = '$'+ Math.abs(totalPrice).toFixed(2).toString()
-	document.getElementById("itemTax").innerHTML = '$'+ Math.abs(totalTax).toFixed(2).toString()
+	priceSum -= item.qty*39.99
+	taxSum -= 0.07*item.qty*39.99
+	finalTotal = priceSum + taxSum +2.99
+	//calculate price 
+	document.getElementById("itemPrice").innerHTML = '$'+ Math.abs(priceSum).toFixed(2).toString()
+	document.getElementById("itemTax").innerHTML = '$'+ Math.abs(taxSum).toFixed(2).toString()
 	document.getElementById("total").innerHTML = '$'+ Math.abs(finalTotal).toFixed(2).toString()
-
-	delete cartItems[idNum]
+	delete itemsCart[deleteID]
 	localStorage.removeItem("userItems")
-	localStorage.setItem("userItems",JSON.stringify(cartItems));
-}
+	localStorage.setItem("userItems",JSON.stringify(itemsCart));}
