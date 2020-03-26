@@ -1,12 +1,9 @@
 
 var cartItems = JSON.parse(localStorage.getItem("userItems"))
-document.getElementById("counter").innerHTML = cartItems.length;
-
 if (cartItems==undefined) {
 	localStorage.setItem("cartItems", "{}")
 	cartItems = {}
 }
-
 
 var totalPrice = 0
 var totalTax = 0
@@ -45,7 +42,7 @@ for (var key in cartItems) {
                             <br>
                             <div class = "bottom_option">
                                 <span class = "price"> $39.99</span>
-                                <h5>Color: ${item.qty}</h5>
+                                <h5>Quantity: ${item.qty}</h5>
                             </div>
 
                            
