@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+
+	<meta charset="utf-8" />
+	<meta name = "author" content = "Yiying Ding">
+	<meta name = "keywords" content = "Carnegie Mellon University, Information Systems">
+	<meta name = "description" content = "Yiying Ding proffesional website">
+	<title> Yiying Ding </title>
+
+
+	<link rel="stylesheet" media="all" type="text/css" href = "css/styles.css" />
+	<link rel="stylesheet" media="all" type="text/css" href = "css/jquery-ui.css"/>
+
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="js/scripts.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.js"></script>
+	<script>
+		$(function(){
+			$("#accordion").accordion();
+		});
+	</script>
+	
+	<script>
+		$(function(){
+			$("#tabs").tabs({
+				event:"mouseover"
+			});
+		});
+	</script>
+
+
+</head>
+
+<body>
+	<!-- <script type="text/javascript">
+		function showDescription(descript){
+			$("#description").html("Description: " + descript);
+		}
+
+		function hideDescription(){
+			$("#description").html();
+		}
+	</script> -->
+	<div id="container">
+		<div id="top_row">
+			<header>
+				<h1> Yiying Ding </h1>
+				<h3> Carnegie Mellon University, Information Systems Program </h3>
+			</header>
+
+			<nav>
+				<a href="index.html">About</a>
+				<a href="projects.html" class="current">Projects</a>
+				<a href="contact.html">Contact</a>
+
+			</nav>
+		</div>
+
+	<div id = "content">
+		<h3>Projects</h3>
+
+
+		<div id="accordion">
+			<h4>Case Analysis Project</h4>
+			<div><p>
+				Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+				</p></div>
+			<h4>Web Development Project</h4>
+			<div><p>
+				Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes.
+				</p></div>
+			<h4>Database Project</h4>
+			<div><p>
+				Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes.
+			</p>
+			<ul>
+				<li>List item one</li>
+				<li>List item two</li>
+				<li>List item three</li>
+			</ul>
+		</div>
+		</div>
+
+
+		<div id="tabs">
+			<ul>
+				<li><a href="#tabs-1">Case Analysis Project</a></li>
+				<li><a href="#tabs-2">Web Dev Project</a></li>
+				<li><a href="#tabs-3">Database Project</a></li>
+			</ul>
+
+			<div id="tabs-1">
+				<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
+				</p>
+			</div>
+
+			<div id="tabs-2">
+				<p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam
+				</p>
+			</div>
+
+			<div id="tabs-3">
+				<p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere 
+				</p>
+			</div>
+		</div>
+
+
+
+		<table width="500">
+		  <caption> <strong>Course Projects</strong></caption>
+		  <tr>
+		    <th>Title</th>
+		    <th>Course</th> 
+		    <th>Semester</th>
+		  </tr>
+		  <tr onmouseover="showDescription('In this project, we build a web app for baking factory with database that can serve administrator, customers and employees.');" onmouseout="hideDescription();">
+		    <td>Web Application Development</td>
+		    <td>67272</td> 
+		    <td>Spring 2019</td>
+		  </tr>
+		  <tr onmouseover="showDescription('In this project, we design a database that mimics the function of Venmo at their starting stage.');" onmouseout="hideDescription();">
+		    <td>Venmo Database Design</td>
+		    <td>67262</td> 
+		    <td>Fall 2018</td>
+		  </tr>
+		  <tr onmouseover="showDescription('In this peoject, we analyse Alibaba and the role IS plays in their development.');" onmouseout="hideDescription();">
+		    <td>Case Analysis Project</td>
+		    <td>67250</td> 
+		    <td>Spring 2019</td>
+		  </tr>
+		</table>
+		
+		<div id="description"></div>
+
+	</div>
+
+	<div id = "sidebar">
+		<br>
+		<h3>Contact</h3>
+		<strong>Yiying Ding</strong><br/>
+		<a href = "http://www.cmu.edu" target ="_blank">Carnegie Mellon University</a><br/>
+		5000 Forbes Avenue<br/>
+		Pittsburgh, PA 15213<br/>
+		412-580-0937 (c)<br/>
+		412-268-0000 (h)<br/><br/>
+		<a href = "mailto:yiyingd@andrew.cmu.edu" target="_blank"><img src="image/email_icon.png" width="40" height="40"></a>
+		<a href = "https://www.linkedin.com/in/yiying-ding-9b3bbb16b/" target="_blank"><img src="image/linkedin_Icon.jpg" width="40" height="40"></a>
+		<a href = "https://www.facebook.com/yiying.ding.3" target="_blank"><img src="image/facebook_Icon.jpg" width="40" height="40"></a>
+	</div>
+
+
+	<footer>
+			<hr/>
+			&copy; Yiying Ding<br/>
+			<a href = "mailto: yiyingd@andrew.cmu.edu">Email Me</a>
+			<a href = "http://cmu.edu" target = "_blank">Carnegie Mellon University</a>
+	</footer>
+	</div>
+
+</body>
+
+</html>
