@@ -9,112 +9,207 @@
 	<meta name = "description" content = "Yiying Ding proffesional website">
 	<title> Yiying Ding </title>
 	<link rel="stylesheet" media="all" type="text/css" href = "css/styles.css" />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<script src="https://kit.fontawesome.com/e54a58476b.js" crossorigin="anonymous"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
-	<script type="text/javascript" src="js/script.js"></script>
 
 
 </head>
-
 <body>
-	<div id="container">
-		<div id="top_row">
-			<header>
-				<h1> Yiying Ding </h1>
-				<h3> Carnegie Mellon University, Information Systems Program </h3>
-			</header>
 
-			<nav>
-				<a href="index.html">About</a>
-				<a href="projects.html">Projects</a>
-				<a href="contact.html" class="current">Contact</a>
+<!--Grid row-->
+<div class="row">
 
-			</nav>
-		</div>
+  <!--Grid column-->
+  <div class="col-md-6 mb-4">
 
-	<div id = "content">
-		<h3>Contact</h3>
-		<p>Please use the below map to find me.</p>
-		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.4051580632354!2d-79.9455611845973!3d40.44416876189411!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8834f2218bddc99f%3A0xeea6ccadbf7b721e!2sWarner+Hall%2C+5000+Forbes+Ave%2C+Pittsburgh%2C+PA+15213!5e0!3m2!1sen!2sus!4v1552862570428" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    <!-- Card -->
+    <div class="card gradient-card">
 
-	<h4>Please use the below form to get in touch with me</h4>
-		<form action="/action_page.php" method="get">
-		  <fieldset>
-  		  <legend>Tell me about yourself</legend>
-			  Name:<br>
-			  <input type="text" name="usrname" value = "Your name" maxlength="250" size = "20">
-			  <br>
-			  <br>
-			  Your date of birth:<br>
-			  <input type="text" name="dob" value="mm/dd/yyyy"  maxlength="250" size = "20">
-			  <br><br>
-		 </fieldset>
+        <div class="card-image" style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg)">
 
-		  <fieldset>
-	  		  <legend>Tell me about your preferences</legend>
-			  Your favorite flower color: <br>
-			  <input type="color" name="favcolor" value=BLACK style="width: 50px;" ><br><br>
+          <!-- Content -->
+          <a href="#!">
+            <div class="text-white d-flex h-100 mask blue-gradient-rgba">
+              <div class="first-content align-self-center p-3">
+                <h3 class="card-title">Today's sales</h3>
+                <p class="lead mb-0">Click on this card to see details</p>
+              </div>
+              <div class="second-content align-self-center mx-auto text-center">
+                <i class="far fa-money-bill-alt fa-3x"></i>
+              </div>
+            </div>
+          </a>
 
-			  Message:<br>
-			  <textarea rows="10" cols="50"  maxlength="1000" form="usrform" style="width: 300px;">
-			  </textarea><br><br>
-		 </fieldset>
+        </div>
 
-		 <fieldset>
-  		 <legend>Let's stay in touch</legend>
-		  How did you find out about me?
-		  	<select name="ways">
-			    <option value="Google" selected>Google</option>
-			    <option value="News article">News article</option>
-			    <option value="Friend">Friend</option>
-			    <option value="Other">Other</option>
-			</select>
-			<br><br>
+        <!-- Data -->
+        <div class="third-content ml-auto mr-4 mb-2">
+          <p class="text-uppercase text-muted">Today's sale</p>
+          <h4 class="font-weight-bold float-right">2000$</h4>
+        </div>
 
-		  Please indicate if you want to receive updates via email:<br>
-			<input type="checkbox" name = "update", value = "boolean"> 
-			Yes, please update me! <br><br>
+        <!-- Content -->
+        <div class="card-body white">
+          <div class="progress md-progress">
+            <div class="progress-bar bg-primary" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+          <p class="text-muted">Better than last week (25%)</p>
+          <h4 class="text-uppercase font-weight-bold my-4">Details</h4>
+          <p class="text-muted" align="justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam vel dolores qui, necessitatibus aut eaque magni mollitia tenetur molestiae sit quae quos quaerat amet exercitationem atque animi odio.</p>
+        </div>
 
-		  Please provide your email address:<br>
-		   <input type="email" id="email" pattern=".+@globex.com" size="30" required  placeholder="abc@defg.com"><br><br>
+    </div>
+    <!-- Card -->
 
-		  Choose a password:<br>
-		  <input type="password" name="psw" size = "20"><br><br>
-		</fieldset>
-			
-		<fieldset>
-		  <button type="submit">
-			<img src="image/submit_icon.png" width="60" height="30" />
-		  </button>
-		</fieldset>
-		</form> 
-	</div>
+  </div>
+  <!--Grid column-->
 
+  <!--Grid column-->
+  <div class="col-md-6 mb-4">
 
+    <!-- Card -->
+    <div class="card gradient-card">
 
-	<div id = "sidebar">
-		<br>
-		<h3>Contact</h3>
-		<strong>Yiying Ding</strong><br/>
-		<a href = "http://www.cmu.edu" target ="_blank">Carnegie Mellon University</a><br/>
-		5000 Forbes Avenue<br/>
-		Pittsburgh, PA 15213<br/>
-		412-580-0937 (c)<br/>
-		412-268-0000 (h)<br/><br/>
-		<a href = "mailto:yiyingd@andrew.cmu.edu" target="_blank"><img src="image/email_icon.png" width="40" height="40"></a>
-		<a href = "https://www.linkedin.com/in/yiying-ding-9b3bbb16b/" target="_blank"><img src="image/linkedin_Icon.jpg" width="40" height="40"></a>
-		<a href = "https://www.facebook.com/yiying.ding.3" target="_blank"><img src="image/facebook_Icon.jpg" width="40" height="40"></a>
-	</div>
+        <div class="card-image" style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
 
+          <!-- Content -->
+          <a href="#!">
+            <div class="text-white d-flex h-100 mask purple-gradient-rgba">
+              <div class="first-content align-self-center p-3">
+                <h3 class="card-title">Subscriptions</h3>
+                <p class="lead mb-0">Click on this card to see details</p>
+              </div>
+              <div class="second-content  align-self-center mx-auto text-center">
+                <i class="fas fa-chart-line fa-3x"></i>
+              </div>
+            </div>
+          </a>
 
-	<footer>
-			<hr/>
-			&copy; Yiying Ding<br/>
-			<a href = "mailto: yiyingd@andrew.cmu.edu">Email Me</a>
-			<a href = "http://cmu.edu" target = "_blank">Carnegie Mellon University</a>
-	</footer>
+        </div>
 
-	</div>
+        <!-- Data -->
+        <div class="third-content  ml-auto mr-4 mb-2">
+          <p class="text-uppercase text-muted">Subscriptions</p>
+          <h4 class="font-weight-bold float-right">200</h4>
+        </div>
+
+        <!-- Content -->
+        <div class="card-body white">
+          <div class="progress md-progress">
+            <div class="progress-bar purple lighten-2" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+          <p class="text-muted">Worse than last week (25%)</p>
+          <h4 class="text-uppercase font-weight-bold my-4">Details</h4>
+          <p class="text-muted" align="justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam vel dolores qui, necessitatibus aut eaque magni mollitia tenetur molestiae sit quae quos quaerat amet exercitationem atque animi odio.</p>
+        </div>
+
+    </div>
+    <!-- Card -->
+
+  </div>
+  <!--Grid column-->
+
+  <!--Grid column-->
+  <div class="col-md-6 mb-4">
+
+    <!-- Card -->
+    <div class="card gradient-card">
+
+        <div class="card-image" style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
+
+          <!-- Content -->
+          <a href="#!">
+            <div class="text-white d-flex h-100 mask peach-gradient-rgba">
+              <div class="first-content align-self-center p-3">
+                <h3 class="card-title">Traffic</h3>
+                <p class="lead mb-0">Click on this card to see details</p>
+              </div>
+              <div class="second-content  align-self-center mx-auto text-center">
+                <i class="fas fa-chart-pie fa-3x"></i>
+              </div>
+            </div>
+          </a>
+
+        </div>
+
+        <!-- Data -->
+        <div class="third-content  ml-auto mr-4 mb-2">
+          <p class="text-uppercase text-muted">Traffic</p>
+          <h4 class="font-weight-bold float-right">20000</h4>
+        </div>
+
+        <!-- Content -->
+        <div class="card-body white animated">
+          <div class="progress md-progress">
+            <div class="progress-bar amber darken-3" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+          <p class="text-muted">Worse than last week (75%)</p>
+          <h4 class="text-uppercase font-weight-bold my-4">Details</h4>
+          <p class="text-muted" align="justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam vel dolores qui, necessitatibus aut eaque magni mollitia tenetur molestiae sit quae quos quaerat amet exercitationem atque animi odio.</p>
+        </div>
+
+    </div>
+    <!-- Card -->
+
+  </div>
+  <!--Grid column-->
+
+  <!--Grid column-->
+  <div class="col-md-6 mb-4">
+
+    <!-- Card -->
+    <div class="card gradient-card">
+
+        <div class="card-image" style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
+
+          <!-- Content -->
+          <a href="#!">
+            <div class="text-white d-flex h-100 mask aqua-gradient-rgba">
+              <div class="first-content align-self-center p-3">
+                <h3 class="card-title">Organic traffic</h3>
+                <p class="lead mb-0">Click on this card to see details</p>
+              </div>
+              <div class="second-content  align-self-center mx-auto text-center">
+                <i class="fas fa-chart-line fa-3x"></i>
+              </div>
+            </div>
+          </a>
+
+        </div>
+
+        <!-- Data -->
+        <div class="third-content  ml-auto mr-4 mb-2">
+          <p class="text-uppercase text-muted">Organic traffic</p>
+          <h4 class="font-weight-bold float-right">2000</h4>
+        </div>
+
+        <!-- Content -->
+        <div class="card-body white">
+          <div class="progress md-progress">
+            <div class="progress-bar cyan lighten-1" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+          <p class="text-muted">Better than last week (50%)</p>
+          <h4 class="text-uppercase font-weight-bold my-4">Details</h4>
+          <p class="text-muted" align="justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam vel dolores qui, necessitatibus aut eaque magni mollitia tenetur molestiae sit quae quos quaerat amet exercitationem atque animi odio.</p>
+        </div>
+
+    </div>
+    <!-- Card -->
+
+  </div>
+  <!--Grid column-->
+
+</div>
+<!--Grid row-->
+
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
 </body>
-
 </html>
+
