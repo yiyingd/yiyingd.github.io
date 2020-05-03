@@ -7,7 +7,9 @@
 	<meta name = "author" content = "Yiying Ding">
 	<meta name = "keywords" content = "Carnegie Mellon University, Information Systems">
 	<meta name = "description" content = "Yiying Ding proffesional website">
-	<title> Nanawall </title>
+	<title> CMU RISS </title>
+	<!-- JS library for floating ainmation -->
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 	<link rel="stylesheet" media="all" type="text/css" href = "css/styles.css" />
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	<script src="https://kit.fontawesome.com/e54a58476b.js" crossorigin="anonymous"></script>
@@ -18,8 +20,9 @@
 </head>
 
 <body>
+	<!-- Nav Bar -->
 	<nav class="navbar navbar-expand-sm navbar-custom">
-	    <a href="/" class="navbar-brand">YD</a>
+	    <a href="index.html" class="navbar-brand">YD</a>
 	    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCustom">
 	        <i class="fa fa-bars fa-lg py-1 text-white"></i>
 	    </button>
@@ -46,14 +49,92 @@
 	                </div>
 	            </li>
 	            <li class="nav-item">
-	                <a class="nav-link" href="#">About Me</a>
+	                <a class="nav-link" href="resume.html">Resume</a>
 	            </li>
 	            <li class="nav-item">
-	                <a class="nav-link" href="#">Resume</a>
+	                <a class="nav-link" href="about.html">About Me</a>
 	            </li>
 	        </ul>
 	    </div>
 	</nav>
+
+
+	<!-- Intro carousel with title and caption -->
+	<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+	  <ol class="carousel-indicators">
+	    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+	  </ol>
+	  <div class="carousel-inner">
+	    <div class="carousel-item active">
+	      <img class="d-block w-100" src="image/riss-home.png" alt="First slide">
+	      <div class="carousel-caption text-right d-none d-md-block">
+	      	<br>
+	      	<br>
+		    <h1>CMU Robotic Institute</h1>
+		    <br>
+		    <h5>A on-going Ruby on Rails web app that make every party enjoying the application process</h5>
+		  </div>
+	    </div>
+	  </div>
+	</div>
+
+	<!-- About RISS -->
+	<div class="cotent-block" data-aos="fade-up">
+		<div class = "row">
+			<div class = "col">
+				<h1>About RISS</h1>
+			</div>
+			<div class = "col-7">
+				<p>The Robotics Institute at CMU, since its founding in 1979, has long been an international leader in robotics research and education. Despite being in the School of Computer Science, the department is “an intellectually diverse, multi-disciplinary department.” The Institute offers diverse opportunities up to intensive masters and PhD programs, working to cultivate the next generation of roboticists. It is the world’s largest university affiliated robotics research group, with over 100 projects and many partnerships with government, industry, and non-profit organizations.<br>
+
+				The CMU Robotics Institute has a very special and selective program called the RISS - Robotics Institute Summer Scholars. RISS is an eleven week summer undergrad research program that accepts both U.S. and international applicants with financial aid. The program aims to provide students with an immersive experience in cutting-edge fields and and the opportunity to conduct research that has real world impact. For this program, they have about 30 labs this year that are accepting applicants for the program, and the Institute received over 750 applications this year.</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Project Goal -->
+	<div class="cotent-block" data-aos="fade-up">
+		<div class = "row">
+			<div class = "col">
+				<h1>Our Goal</h1>
+			</div>
+			<div class = "col-7">
+				<p>We are building a web application based on an old version of application dashboard. We currently had finished the problem finding stage and ready to move forward to the actual coding stage. Since this is a project that last the entire semester, we have had weekly meeting with different group of clients as well as our advisor. We plan to built several ideal feature and make UI improvement to the current website. Due to credential problem, please <a href = "mailto: yiyingd@andrew.cmu.edu">
+				contact me</a> if you are interest in this project! </p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Blur pic -->
+	<div class = "blur-picture">
+		<img src="image/riss-blur.png" width = "80%">
+	</div>
+
+	<!-- Button to Waste Management -->
+	<br>
+	<a href="nanawall.html" >
+		<div id = "left-buttonposition">
+			<button type="button" class="btn" >
+				<i class="fas fa-arrow-left"></i><span style="font-size:2em;">&nbsp Waste Management </span>
+			</button>
+		</div>
+	</a>
+
+
+
+
+	<footer>
+		<p>@Yiying Ding 2020</p>
+		<a href = "https://www.linkedin.com/in/yiying-ding-9b3bbb16b/">
+			<i class="fab fa-linkedin icon-large"></i> Check Out LinkedIn Page
+		</a>
+		<a href = "mailto: yiyingd@andrew.cmu.edu">
+			<i class="far fa-envelope left-small-buffer"></i> Contact Me
+		</a>
+	</footer>
+
+
+
 
 
 	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
@@ -61,4 +142,18 @@
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js.map"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js.map"></script>
+	 <script>
+	    AOS.init();
+
+	    $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+                event.preventDefault();
+                $(this).ekkoLightbox();
+            });
+	 </script>
 </body>

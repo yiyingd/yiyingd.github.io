@@ -95,7 +95,7 @@
     top: 50px;
     left: 0;
     min-height: 500px;
-    filter: brightness(50%);
+    filter: brightness(40%);
 }
 
 .carousel-caption {
@@ -118,7 +118,20 @@
   color: black;
 }
 
+ #resume{
+  width: 100%;
+  margin: -30px auto;
+  padding: 4%;
+  line-height: 250%;
+  text-align: left;
+  color: rgba(97,173,206);
+}
+
 .cotent-block h1{
+ color: rgba(97,173,206,.8);
+}
+
+.cotent-block h3{
  color: rgba(97,173,206,.8);
 }
 
@@ -155,7 +168,11 @@
 }
 
 #microinteractions h3{
-    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+#persona h3{
     margin-top: 10%;
     margin-bottom: 10%;
 }
@@ -163,7 +180,6 @@
 #buttonposition{
     text-align: right;
     font-size: 5em;
-    color: white;
 }
 
 #buttonposition:hover{
@@ -174,15 +190,124 @@
 #buttonposition .btn{
     background-color: transparent;
     border-color: transparent;
+    color: rgba(97,173,206);
+}
+
+#left-buttonposition{
+    text-align: left;
+    font-size: 5em;
+}
+
+#left-buttonposition:hover{
+    position: relative;
+    left:10%;
+}
+
+
+
+#left-buttonposition .btn{
+    background-color: transparent;
+    border-color: transparent;
+    color: rgba(97,173,206);
 }
 
 
 .btn .fas {
      font-size: 1.5em;
-     color:white;
+     color: rgba(97,173,206);
+}
+
+#figma-prototype{
+    margin-top: 5%;
 }
 
 
+.blur-picture{
+    margin-left: 15%;
+}
+
+.blur-picture img{
+    -webkit-filter: blur(5px); /* Safari 6.0 - 9.0 */
+    filter: blur(5px);
+}
+
+.thumbnail {
+    position: relative;
+}
+
+.caption {
+    position: absolute;
+    top: 45%;
+    left: 0;
+    width: 100%;
+}
+
+#sidebar{
+    margin:10%;
+    text-align: center;
+}
+
+.nav-tabs{
+  width :100%;
+}
+
+#sidebar .fas{
+    margin: 20%;
+    font-size: 5em;
+    color: #DADADA;
+}
+
+
+#sidebar .fas:hover{
+
+    color: rgba(97,173,206);
+}
+
+#sidebar:hover{
+
+    color: rgba(97,173,206);
+}
+
+
+.rightbar{
+    margin:10%;
+}
+
+* { box-sizing: border-box; }
+
+body { font-family: sans-serif; }
+
+#baking h2{
+   color: rgba(97,173,206);
+}
+
+#baking p{
+   color: rgba(97,173,206);
+}
+
+#book h2{
+   color: rgba(97,173,206);
+}
+
+#book p{
+   color: rgba(97,173,206);
+}
+
+#gaming h2{
+   color: rgba(97,173,206);
+}
+
+#gaming p{
+   color: rgba(97,173,206);
+}
+
+#home-info a{
+   color: #777B84;
+}
+
+#home-info a:hover{
+    color: rgba(97,173,206);
+}
 
 footer {
     border-top:1px solid #DADADA;
